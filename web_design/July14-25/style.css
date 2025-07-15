@@ -1,0 +1,72 @@
+body {
+  background-image: url("backgrd.png");
+  backdrop-filter: blur(5px);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  background-image: linear-gradient(to right, #c2e9fb, #3371d4);
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 600px;
+  border: skyblue 3px solid;
+  border-radius: 25px;
+
+}
+
+
+.card-header {
+  background-color: #3371d4;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 25px;
+}
+
+#name {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#name:hover {
+  color: #ffffff;
+}
+
+#profile-image {
+  height: 250px;
+  width: 200px;
+  border: 2px solid #3371d4;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-detail {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  padding: 25px;
+  text-align: center;
+  color: #000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile-description {
+  font-size: 0.9rem;
+  color: #333;
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

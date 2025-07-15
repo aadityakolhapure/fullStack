@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-image: url("https://th.bing.com/th/id/R.6212de0edfcfa19dc9d0ab1c2b7ccfee?rik=ft3WjZa1w4Ahow&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f7%2fd%2fc%2f15327.jpg&ehk=apgWS8cSuTBWAK%2b4St%2fPwFO05%2baUkcOL4DtcROqV7hc%3d&risl=&pid=ImgRaw&r=0");
+        backdrop-filter: blur(5px);
+        background-size: cover;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .card {
+        background-image: linear-gradient(to right, #c2e9fb, #d1def4);
+        width: 100%;
+        max-width: 700px;
+        padding: 2rem;
+        border-radius: 1.5rem 0rem 1.5rem 0rem;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .card:hover {
+        border: rgb(12, 87, 193) 4px solid;
+        box-shadow: 0 0 12px rgb(12, 87, 193);
+      }
+
+      .card2 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .profile-image {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 0.4rem solid rgb(12, 87, 193);
+      }
+
+      #name {
+        font-size: 1.7rem;
+        font-weight: 600;
+        color: #000;
+        margin: 10px 0;
+      }
+
+      #name:hover {
+        color: rgb(13, 85, 111);
+      }
+
+      .profile-title {
+        background-image: radial-gradient(circle, blue, #c2e9fb);
+        color: white;
+        padding: 10px;
+        border-radius: 1.4rem;
+        border: 2px inset #3371d4;
+        margin-bottom: 15px;
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
+
+      .profile-description {
+        font-size: 0.95rem;
+        color: #222;
+        line-height: 1.6;
+        padding: 0 10px;
+      }
+
+      i {
+        font-size: 25px !important;
+        padding-left: 15px;
+      }
+
+      i:hover {
+        font-size: 33px !important;
+        color: #3371d4;
+      }
+
+      .footer {
+        font-size: 0.8rem;
+        color: #3e3e3e;
+        margin-top: 20px;
+      }
+
+      .email {
+        color: #3e3e3e;
+        font-weight: 500;
+        font-size: 1.1rem;
+        margin-left: 10px;
+      }
+
+      .contact-info {
+        margin-top: 15px;
+        font-size: 1rem;
+      }
+
+      .divider {
+        border: none;
+        border-bottom: 1px dotted #000;
+        margin-top: 10px;
+        width: 100%;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .card2 {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
+        .profile-image {
+          width: 150px;
+          height: 150px;
+        }
+
+        #name {
+          font-size: 1.4rem;
+        }
+
+        .email {
+          font-size: 1rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .card {
+          padding: 1rem;
+        }
+
+        .profile-image {
+          width: 120px;
+          height: 120px;
+        }
+
+        i {
+          font-size: 22px !important;
+        }
+
+        i:hover {
+          font-size: 28px !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card2">
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/024/183/525/large_2x/avatar-of-a-man-portrait-of-a-young-guy-illustration-of-male-character-in-modern-color-style-vector.jpg"
+          alt="Profile Picture"
+          class="profile-image"
+        />
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <h1 id="name">Aaditya Pravin Kolhapure</h1>
+          <div class="profile-title">Full Stack Java Developer</div>
+          <div class="contact-info">
+            <i class="fa fa-envelope"></i>
+            <span class="email">aadityakolhapure28@gmail.com</span>
+            <br />
+            <i class="fa fa-phone"></i>
+            <span class="email">+91 8983081348</span>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <p class="profile-description" style="font-weight: 500">
+          Follow Me At:
+        </p>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="https://github.com/aadityakolhapure/" target="_blank"
+          ><i class="fa fa-github"></i
+        ></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a
+          href="https://www.linkedin.com/in/aaditya-kolhapure-534a2b241/"
+          target="_blank"
+          ><i class="fa fa-linkedin"></i
+        ></a>
+
+        <div class="divider"></div>
+        <p class="footer">
+          <marquee behavior="" direction="">Let's connect and Collaborate!</marquee>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

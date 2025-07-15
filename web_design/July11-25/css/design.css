@@ -1,0 +1,31 @@
+nav{
+    background-color: aliceblue;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+
+    margin: 12px;
+    
+}
+
+p{
+    padding-left: 8px;
+}
+
+.logo{
+
+    margin: 12px;
+    font-size: large;
+    font-weight: bold;
+    align-items: center;
+    place-items: center;
+    dis
+}
