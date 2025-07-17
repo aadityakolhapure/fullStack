@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      img {
+        animation: myFun 3s infinite;
+      }
+
+      @keyframes myFun {
+        0% {
+          transform: rotate(0deg);
+        }
+        25% {
+          transform: rotate(20deg);
+        }
+
+        50% {
+          transform: rotate3d(1, 1, 1, 45deg);
+        }
+
+        75% {
+          transform: rotate(340deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img src="796843.png" alt="" width="400px" />
+  </body>
+</html>

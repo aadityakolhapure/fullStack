@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #f4f4f4;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 40px auto;
+        padding: 20px;
+        gap: 30px;
+        background-image: linear-gradient(to right, #78b9b5, #0f828c);
+        border-radius: 10px;
+        max-width: 1200px;
+      }
+
+      .header {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+      }
+
+      .header h1 {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        border: 3px solid #320a6b;
+        padding: 8px 20px;
+        color: #0f828c;
+        border-radius: 20px;
+        margin-bottom: 10px;
+      }
+
+      .header h1:hover {
+        letter-spacing: 3px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .header p {
+        color: #320a6b;
+        font-size: 18px;
+        text-align: center;
+      }
+
+      .card {
+        border: 3px solid #320a6b;
+        border-radius: 10px 0 10px 0;
+        padding: 20px;
+        width: 260px;
+        background-image: linear-gradient(to right, #e7f7f7, #f7f7f7);
+        box-sizing: border-box;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .card:hover {
+        box-shadow: 13px 11px 14px 0px rgba(0, 0, 0, 0.2);
+        transform: scale(1.05);
+      }
+
+      .card .profile-image {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+      }
+
+      .d {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .name {
+        text-align: center;
+      }
+
+      .name p:first-child {
+        margin: 0;
+      }
+
+      .icons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      i {
+        font-size: 20px;
+        color: #320a6b;
+        cursor: pointer;
+      }
+
+      i:hover {
+        color: #0f828c;
+      }
+
+      .detail p {
+        text-align: center;
+        margin: 4px 0;
+      }
+
+      @media (max-width: 768px) {
+        .contrainer{
+            
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Member Profiles</h1>
+      <p>
+        Welcome to the member profile section. Here you can view and manage
+        member details.
+      </p>
+    </div>
+    <div class="container">
+      <div class="card">
+        <div class="profile-image">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/019/896/008/original/male-user-avatar-icon-in-flat-design-style-person-signs-illustration-png.png"
+            alt=""
+            width="100"
+            height="100"
+          />
+        </div>
+
+        <div class="detail">
+          <div class="d">
+            <div class="name">
+              <p
+                style="
+                  font-size: 17px;
+                  font-weight: bold;
+                  color: #320a6b;
+                  margin: 2px;
+                "
+              >
+                Aaditya Kolhapure
+              </p>
+              <div style="border: none; border-bottom: 1px solid #320a6b"></div>
+              <p style="font-size: 14px; color: grey; margin: 2px">
+                Full Stack Developer
+              </p>
+            </div>
+            <div class="icons">
+              <i class="fa fa-linkedin"></i>
+              <i class="fa fa-github"></i>
+            </div>
+            <p style="font-size: 14px; color: #065084; margin: 2px">
+              Builds responsive web apps with seamless frontend and backend
+              integration.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="profile-image">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/019/896/008/original/male-user-avatar-icon-in-flat-design-style-person-signs-illustration-png.png"
+            alt=""
+            width="100"
+            height="100"
+          />
+        </div>
+
+        <div class="detail">
+          <div class="d">
+            <div class="name">
+              <p
+                style="
+                  font-size: 17px;
+                  font-weight: bold;
+                  color: #320a6b;
+                  margin: 2px;
+                "
+              >
+                Rushikesh Mote
+              </p>
+              <div style="border: none; border-bottom: 1px solid #320a6b"></div>
+              <p style="font-size: 14px; color: grey; margin: 2px">
+                UI/UX Designer
+              </p>
+            </div>
+            <div class="icons">
+              <i class="fa fa-linkedin"></i>
+              <i class="fa fa-github"></i>
+            </div>
+            <p style="font-size: 14px; color: #065084; margin: 2px">
+              Designs clean, user-friendly interfaces and ensures great user
+              experience.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="profile-image">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/019/896/008/original/male-user-avatar-icon-in-flat-design-style-person-signs-illustration-png.png"
+            alt=""
+            width="100"
+            height="100"
+          />
+        </div>
+
+        <div class="detail">
+          <div class="d">
+            <div class="name">
+              <p
+                style="
+                  font-size: 17px;
+                  font-weight: bold;
+                  color: #320a6b;
+                  margin: 2px;
+                "
+              >
+                Siddharth Shinde
+              </p>
+              <div style="border: none; border-bottom: 1px solid #320a6b"></div>
+              <p style="font-size: 14px; color: grey; margin: 2px">
+                AI/ML Engineer
+              </p>
+            </div>
+            <div class="icons">
+              <i class="fa fa-linkedin"></i>
+              <i class="fa fa-github"></i>
+            </div>
+            <p style="font-size: 14px; color: #065084; margin: 2px">
+              Implements smart AI features and handles data-driven solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="profile-image">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/019/896/008/original/male-user-avatar-icon-in-flat-design-style-person-signs-illustration-png.png"
+            alt=""
+            width="100"
+            height="100"
+          />
+        </div>
+
+        <div class="detail">
+          <div class="d">
+            <div class="name">
+              <p
+                style="
+                  font-size: 17px;
+                  font-weight: bold;
+                  color: #320a6b;
+                  margin: 2px;
+                "
+              >
+                Aditya padale
+              </p>
+              <div style="border: none; border-bottom: 1px solid #320a6b"></div>
+              <p style="font-size: 14px; color: grey; margin: 2px">
+                DevOps & QA Engineer
+              </p>
+            </div>
+            <div class="icons">
+              <i class="fa fa-linkedin"></i>
+              <i class="fa fa-github"></i>
+            </div>
+            <p style="font-size: 14px; color: #065084; margin: 2px">
+              Manages deployments, testing, and system reliability.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

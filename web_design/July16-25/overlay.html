@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .innerdiv {
+        height: 300px;
+        width: 600px;
+        background-color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        margin-top: 8px;
+        opacity: 0;
+        top: 0;
+        position: absolute;
+      }
+
+      .container{
+        width: 25%;
+      }
+
+      .container:hover .innerdiv {
+        opacity: 1.0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="796843.png" alt="" height="300px" width="600px" />
+      <div class="innerdiv">hello world</div>
+    </div>
+  </body>
+</html>
