@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fixed Panda Parts</title>
+  <style>
+    body {
+      background-image: url("https://wallpaperaccess.com/full/4120746.jpg");
+      background-size: cover;
+      display: flex;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .frame-container {
+      display: flex;
+    }
+
+    .frame {
+      background-image: url("Panda.png"); /* Make sure "Panda.png" is in the same directory or provide the correct path */
+      height: 350px;
+      background-repeat: no-repeat;
+      background-size: auto 100%; /* Adjust as needed to fit the height */
+      width: 200px; /* Adjust width for each frame */
+      border: 1px solid black;
+      margin: 0 5px; /* Space between frames */
+        animation: slideStart 3s infinite; /* Animation to slide through frames */
+    }
+
+    .start-frame {
+      background-position: 0% 0%; /* Fixed to the start (left) */
+    }
+
+    .middle-frame {
+      background-position: 50% 0%; /* Fixed to the middle (center horizontally) */
+    }
+
+    .end-frame {
+      background-position: 100% 0%; /* Fixed to the end (right) */
+    }
+
+    @keyframes slideStart {
+      0% { background-position: 0% 0%; }
+      33.33% { background-position: 50% 0%; }
+      66.66% { background-position: 100% 0%; }
+      100% { background-position: 0% 0%; }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="frame-container">
+    <div class="frame start-frame"></div>
+  </div>
+</body>
+</html>
