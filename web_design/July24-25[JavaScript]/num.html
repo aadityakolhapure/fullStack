@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <form action="" name="form1">
+        <input type="text" placeholder="first number" name="num1" /><br /><br />
+        <input
+          type="text"
+          placeholder="second number"
+          name="num2"
+        /><br /><br />
+        <input type="text" placeholder="third number" name="num3" /><br /><br />
+        <hr />
+        <br />
+        <button onclick="greaterNum()">Check greater</button>
+        <button onclick="SmallestNum()">Check smallest</button>
+      </form>
+    </div>
+    <script>
+      function greaterNum() {
+        var firstnum = Number(document.form1.num1.value);
+        var secondnum = Number(document.form1.num2.value);
+        var thirdnum = Number(document.form1.num3.value);
+        if (firstnum > secondnum && firstnum > thirdnum) {
+          document.write(firstnum, " is greater");
+        } else if (secondnum > firstnum && secondnum > thirdnum) {
+          document.write(secondnum, " is greater");
+        } else if (thirdnum > firstnum && thirdnum > secondnum) {
+          document.write(thirdnum, " is greater");
+        } else {
+          document.write("all number are equal or invalid input");
+        }
+      }
+
+      function SmallestNum() {
+        var firstnum = Number(document.form1.num1.value);
+        var secondnum = Number(document.form1.num2.value);
+        var thirdnum = Number(document.form1.num3.value);
+        if (firstnum < secondnum && firstnum < thirdnum) {
+          document.write(firstnum, " is smallest");
+        } else if (secondnum < firstnum && secondnum < thirdnum) {
+          document.write(secondnum, " is smallest");
+        } else if (thirdnum < firstnum && thirdnum < secondnum) {
+          document.write(thirdnum, " is smallest");
+        } else {
+          document.write("all number are equal or invalid input");
+        }
+      }
+    </script>
+  </body>
+</html>

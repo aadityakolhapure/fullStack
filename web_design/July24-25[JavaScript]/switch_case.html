@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body
+    style="
+      display: flex;
+      justify-content: center;
+      align-item: center;
+      margin-top: 20px;
+    "
+  >
+    <body>
+      <form
+        action=""
+        name="form1"
+        style="
+          background-color: aliceblue;
+          padding: 10px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-item: center;
+        "
+      >
+        <input
+          type="text"
+          name="num1"
+          id=""
+          style="margin-bottom: 10px"
+          placeholder="Enter first number"
+        /><br /><br />
+        <input
+          type="text"
+          name="num2"
+          placeholder="Enter second number"
+          style="margin-bottom: 10px"
+        />
+        <br /><br />
+        <h4>1.Addition 2.Substraction 3.Multiplication 4.Division</h4>
+        <br /
+        <hr />
+        <input type="text" name="operation" placeholder="Enter operation" />
+        <br /><br />
+        <hr />
+        <button onclick="calculator()">Calculate</button>
+      </form>
+    </body>
+    <script>
+      function calculator() {
+        const first = Number(document.form1.num1.value);
+        const second = Number(document.form1.num2.value);
+        const ops = Number(document.form1.operation.value);
+        let result = 0;
+        switch (ops) {
+          case 1:
+            result = first + second;
+            alert("addition is " + (first + second));
+            break;
+          case 2:
+            result = first - second;
+            alert("Substraction is " + result);
+            break;
+
+          case 3:
+            result = first * second;
+            alert("Multiplication is " + result);
+            break;
+          case 4:
+            result = first / second;
+            alert("Division is " + result);
+            break;
+          default:
+            alert("wrong input");
+        }
+      }
+    </script>
+  </body>
+</html>

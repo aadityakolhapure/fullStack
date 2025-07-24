@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var a = "hello"; //global variable
+      function test() {
+        var p = "aaditya"; //local variable
+        document.write(p); //output:aaditya
+        document.write(a); //output:hello
+      }
+      test();
+      document.write(a); //output:hello
+      //document.write(p); //error will occur
+    </script>
+  </body>
+</html>
