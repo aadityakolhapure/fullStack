@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Bank App</title>
+  </head>
+  <body>
+    <script>
+      let balance = Number(prompt("Enter the initial balance:"));
+      let choice;
+
+      do {
+        choice = Number(
+          prompt(
+            "Choose an option:\n1. Deposit\n2. Withdraw\n3. Check Balance\n4. Exit"
+          )
+        );
+
+        switch (choice) {
+          case 1:
+            let depositMoney = Number(prompt("Enter the amount to deposit:"));
+            balance += depositMoney;
+            document.write(depositMoney + " has been deposited.<br>");
+            break;
+
+          case 2:
+            let withdrawMoney = Number(prompt("Enter the amount to withdraw:"));
+            if (withdrawMoney > balance) {
+              alert("Insufficient balance");
+            } else {
+              balance -= withdrawMoney;
+              document.write(withdrawMoney + " has been withdrawn.<br>");
+            }
+            break;
+
+          case 3:
+            document.write("Your current balance is " + balance + "<br>");
+            break;
+
+          case 4:
+            document.write("Exiting the application.<br>");
+            break;
+
+          default:
+            document.write("Invalid choice. Please try again.<br>");
+            break;
+        }
+      } while (choice !== 4);
+    </script>
+  </body>
+</html>
