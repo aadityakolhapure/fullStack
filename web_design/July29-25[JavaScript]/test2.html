@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <input
+        type="text"
+        placeholder="Enter first name: "
+        id="name"
+        onkeyup="validate()" />
+      <br /><br />
+      <h2 id="error" style="color: red"></h2>
+      <hr />
+    </form>
+
+    <script>
+      function validate() {
+        var name1 = document.getElementById("name").value;
+
+        const regs = /^[A-Za-z]+$/;
+
+        if (regs.test(name1)) {
+          document.getElementById("error").innerText = "Correct";
+        } else {
+          document.getElementById("error").innerText = "Incorrect";
+        }
+      }
+    </script>
+  </body>
+</html>

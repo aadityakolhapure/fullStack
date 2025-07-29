@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <input type="text" placeholder="Enter first name: " id="name" />
+      <br /><br />
+
+      <button type="button" onclick="validate()">Submit</button><br /><br />
+      <hr />
+
+      <h2 id="result" style="color: red;"></h1>
+    </form>
+
+    <script>
+      function validate() {
+        var name1 = document.getElementById("name").value;
+
+
+        const regs = /^[A-Za-z]+$/;
+    
+
+        if (regs.test(name1)) {
+          alert("Name is valid");
+        } else {
+
+            alert("Name must contain only character from A-Z, a-z")
+        }
+      }
+    </script>
+  </body>
+</html>
