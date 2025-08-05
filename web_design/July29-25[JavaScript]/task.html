@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Manual Signal Control</title>
+    <style>
+      body {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        background-color: aliceblue;
+      }
+
+      h1 {
+        margin-top: 20px;
+      }
+
+      .signal-box {
+        width: 120px;
+        margin: 30px auto;
+        padding: 20px;
+        background: #222;
+        border-radius: 20px;
+      }
+
+      .light {
+        width: 80px;
+        height: 80px;
+        margin: 15px auto;
+        border-radius: 50%;
+        background-color: #555;
+        transition: background 0.3s ease;
+      }
+
+      .buttons {
+        margin-top: 20px;
+      }
+
+      button {
+        padding: 10px 20px;
+        margin: 0 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Traffic Signal Control</h1>
+
+    <div class="signal-box">
+      <div class="light c1"></div>
+      <div class="light c2"></div>
+      <div class="light c3"></div>
+    </div>
+
+    <div class="buttons">
+      <button id="red">Red</button>
+      <button id="yellow">Yellow</button>
+      <button id="green">Green</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        function resetLights() {
+          $(".light").css("background-color", "#555");
+        }
+
+        $("#red").click(function () {
+          resetLights();
+          $(".c1").css("background-color", "red");
+        });
+
+        $("#yellow").click(function () {
+          resetLights();
+          $(".c2").css("background-color", "yellow");
+        });
+
+        $("#green").click(function () {
+          resetLights();
+          $(".c3").css("background-color", "green");
+        });
+      });
+    </script>
+  </body>
+</html>
