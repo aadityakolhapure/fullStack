@@ -11,7 +11,9 @@
     <script>
       $(document).ready(function () {
         $("#myInput").keyup(function () {
-          alert("keyup event");
+         // var v = document.getElementById("myInput").value;
+          var v = $("#myInput").val();
+          document.writeln("You entered: " + v + "<br>");
         });
       });
     </script>
