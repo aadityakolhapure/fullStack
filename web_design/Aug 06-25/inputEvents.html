@@ -10,10 +10,10 @@
     <input type="text" id="myInput" placeholder="name" />
     <script>
       $(document).ready(function () {
-        $("#myInput").keyup(function () {
-         // var v = document.getElementById("myInput").value;
+        $("#myInput").focus(function () {
+          // var v = document.getElementById("myInput").value;
           var v = $("#myInput").val();
-          document.writeln("You entered: " + v + "<br>");
+          // document.writeln("You entered: " + v + "<br>");
         });
       });
     </script>
