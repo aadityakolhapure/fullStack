@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        box-shadow: 5px 10px 10px 10px orange;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="12"></h1>
+    <label for="options">Choose an option:</label>
+    <select id="options">
+      <option value="1" disabled selected>Select an option</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+      <option value="4">Option 4</option>
+      <option value="5">Option 5</option>
+    </select>
+    <p>You <strong>have</strong> to hurry up!</p>
+    <p>We <em>cannot</em> live like this.</p>
+
+    <img src="rose.jpg" height="“250px”" width="“250px”" alt="A rose" />
+
+    <script>
+      var a = 10;
+      document.getElementById("12").innerHTML =
+        "<em style='color:red;'>" + a + "</em>";
+    </script>
+  </body>
+</html>

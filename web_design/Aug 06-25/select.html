@@ -7,23 +7,21 @@
     <title>Document</title>
   </head>
   <body>
-    <select name="" id="mySelect" >
+    <select name="" id="mySelect">
       <option disabled>select</option>
       <option>xyz</option>
       <option>pqr</option>
       <option>mnq</option>
-
     </select>
 
-    
     <span id="name" style="font-size: large; color: green"> </span>
     <script>
       $(document).ready(function () {
         $("#mySelect").change(function () {
           var v = $("#mySelect").val();
 
-          $("#name").text("You selected: " + v);
-
+        //  $("#name").text("You selected: " + v);
+          document.getElementById("name").innerHTML = v;
         });
       });
     </script>
